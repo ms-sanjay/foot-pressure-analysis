@@ -1,0 +1,56 @@
+# =============================
+# 🌐 FRONTEND IGNORE (React + Vite)
+# =============================
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor and system files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =============================
+# 🧠 BACKEND IGNORE (Flask + ML)
+# =============================
+backend/__pycache__/
+backend/venv/
+backend/ven/
+backend/models/
+backend/classified_results/
+backend/processed/
+backend/results/
+backend/uploads/
+
+# Ignore temporary runtime files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# =============================
+# 🧰 ENVIRONMENT & DATA
+# =============================
+.env
+*.env
+*.pkl
+*.h5
+*.hdf5
+*.joblib
+*.csv
+*.json
+*.zip
+*.tar
+*.gz
