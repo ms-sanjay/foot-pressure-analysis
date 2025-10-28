@@ -189,4 +189,5 @@ def get_image(filename):
         return jsonify({"error": "Image not found"}), 404
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Render provides this env variable
+    app.run(host="0.0.0.0", port=port, debug=True)
