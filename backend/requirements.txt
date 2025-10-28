@@ -1,0 +1,25 @@
+# --- Core Web Framework ---
+Flask
+Flask-Cors
+Werkzeug
+
+# --- Machine Learning & Deep Learning ---
+tensorflow       # Works well with Python 3.11 and NumPy 1.x
+h5py         # For .h5 model loading (used by Keras)
+
+# --- Image Processing ---
+opencv-python     # Compatible with TensorFlow + NumPy 1.26
+Pillow          # Optional, for image I/O if needed
+
+# --- Numerical & Scientific ---
+numpy              # Must stay below 2.0 for TensorFlow & OpenCV
+scipy        # Works well with NumPy 1.26
+
+# --- Visualization ---
+matplotlib         # For saving heatmaps or plots
+
+# --- Utilities ---
+uuid                # UUID handling (optional, but ensures consistency)
+
+# --- Optional (for safety & serialization) ---
+json5

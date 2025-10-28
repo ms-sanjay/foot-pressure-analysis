@@ -1,0 +1,166 @@
+.login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--gray-900), var(--gray-800));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 28rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    box-sizing: border-box; 
+  }
+  
+  .login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .login-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, var(--blue-400), var(--purple-400));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+  }
+  
+  .login-header p {
+    color: var(--gray-400);
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .user-type-selector {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .user-type-btn {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 300ms;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user-type-btn.active-doctor {
+    border-color: rgba(59, 130, 246, 0.5);
+    background-color: rgba(59, 130, 246, 0.1);
+  }
+  
+  .user-type-btn.active-patient {
+    border-color: rgba(139, 92, 246, 0.5);
+    background-color: rgba(139, 92, 246, 0.1);
+  }
+  
+  .user-type-btn .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .user-type-btn.active-doctor .icon {
+    color: var(--blue-400);
+  }
+  
+  .user-type-btn.active-patient .icon {
+    color: var(--purple-400);
+  }
+  
+  .user-type-btn span {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+  }
+  
+  .user-type-btn.active-doctor span {
+    color: var(--blue-400);
+  }
+  
+  .user-type-btn.active-patient span {
+    color: var(--purple-400);
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%; 
+  }
+  
+  .input-group {
+    width: 100%;
+    position: relative; 
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-400);
+    width: 1rem;
+    height: 1rem;
+    z-index: 1;
+  }
+  
+  .login-input {
+    width: 100%;
+    box-sizing: border-box; 
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    color: white;
+    font-size: 0.875rem;
+    position: relative; 
+  }
+  
+  .login-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+  }
+  
+  .login-input::placeholder {
+    color: var(--gray-400);
+  }
+  
+  .error-message {
+    padding: 1rem;
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 0.5rem;
+    color: var(--red-400);
+    font-size: 0.875rem;
+  }
+  
+  .login-button {
+    width: 100%;
+    background: linear-gradient(to right, var(--blue-600), var(--purple-600));
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 300ms;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem; 
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(to right, var(--blue-700), var(--purple-700));
+  }
