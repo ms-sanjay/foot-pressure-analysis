@@ -65,7 +65,7 @@ function Analysis() {
       const formData = new FormData();
       formData.append('image', file);
 
-      const response = await axios.post('http://localhost:5000/upload', formData, {
+      const response = await axios.post('https://foot-pressure-analysis.onrender.com/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         onUploadProgress: (progressEvent) => {
           const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
@@ -87,7 +87,7 @@ function Analysis() {
 
       const formatImage = (imgUrl) => {
         if (typeof imgUrl === 'string' && (imgUrl.startsWith('/') || imgUrl.startsWith('http'))) {
-          return `http://localhost:5000${imgUrl}`;
+          return `https://foot-pressure-analysis.onrender.com${imgUrl}`;
         }
         return null;
       };
